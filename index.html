@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    
+    <nav id="desktop-nav">
+        <div class="logo">MOHAMED ALI K</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#project">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">MOHAMED ALI K</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="togglemenu()">ABOUT</a></li>
+            <li><a href="#experience" onclick="togglemenu()">EXPERIENCE</a></li>
+            <li><a href="#project" onclick="togglemenu()">PROJECT</a></li>
+            <li><a href="#contact" onclick="togglemenu()">CONTACT</a></li>
+        </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
 </body>
 </html>
