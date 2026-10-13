@@ -351,3 +351,121 @@ footer{
 footer p{
     text-align: center;
 }
+
+/* PORTFOLIO EXPERIENCE ENTRY */
+#experience{
+    height: auto;
+    min-height: 96vh;
+    padding-bottom: 8vh;
+}
+.experience-entry{
+    max-width: 52rem;
+    margin: 2rem auto;
+    text-align: left;
+}
+.experience-entry__company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+}
+.experience-entry__logo{
+    width: 8rem;
+    max-height: 3.5rem;
+    object-fit: contain;
+}
+.experience-entry__role{
+    flex: 1;
+}
+.experience-entry__role .experience-sub-title{
+    margin-bottom: 0;
+}
+.experience-entry__company-name{
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.experience-entry__dates{
+    font-weight: 600;
+    white-space: nowrap;
+}
+.experience-entry__responsibilities{
+    margin: 1.5rem 0;
+    padding-left: 1.25rem;
+    line-height: 1.7;
+}
+.experience-entry__responsibilities li{
+    padding-left: 0.25rem;
+    margin-bottom: 0.55rem;
+}
+.experience-entry__responsibilities li::marker{
+    color: rgb(225, 74, 57);
+}
+.experience-entry__tools h3{
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+.experience-entry__tool-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+.experience-entry__tool-list li{
+    padding: 0.35rem 0.65rem;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 0.35rem;
+    background: rgb(250, 250, 250);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.experience-entry__award{
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgb(163, 163, 163);
+    line-height: 1.7;
+}
+
+/* SKILLS SECTION */
+#skills .skills-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+#skills .skill-card{
+    min-width: 0;
+    text-align: left;
+}
+#skills .skill-card .experience-sub-title{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+#skills .skill-list{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 1rem;
+}
+#skills .skill-item{
+    display: grid;
+    grid-template-columns: 1.5rem minmax(0, 1fr);
+    align-items: start;
+    justify-content: initial;
+    width: auto;
+    gap: 0.65rem;
+}
+#skills .skill-item .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#skills .skill-item h3{
+    font-size: 1rem;
+    line-height: 1.35;
+}
+#skills .skill-level{
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}

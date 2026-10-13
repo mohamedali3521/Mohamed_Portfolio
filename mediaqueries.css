@@ -90,3 +90,20 @@
         text-align: justify;
     }
 }
+
+@media screen and (max-width:900px){
+    #skills .skills-grid{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    #skills .skill-list{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    #skills .skill-card{
+        padding: 1.25rem;
+    }
+}

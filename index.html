@@ -14,6 +14,7 @@
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#project">PROJECT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -30,6 +31,7 @@
         <div class="menu-links">
             <li><a href="#about" onclick="togglemenu()">ABOUT</a></li>
             <li><a href="#experience" onclick="togglemenu()">EXPERIENCE</a></li>
+            <li><a href="#skills" onclick="togglemenu()">SKILLS</a></li>
             <li><a href="#project" onclick="togglemenu()">PROJECT</a></li>
             <li><a href="#contact" onclick="togglemenu()">CONTACT</a></li>
         </div>
@@ -37,14 +39,14 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/Mohamed_Ali_K.png" alt="mohamed_ali profile pic">
+            <img src="./assets/Mohamed_New_Photo.png" alt="mohamed_ali profile pic">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello I'm</p>
             <h1 class="title">Mohamed Ali K</h1>
             <p class="section__text__p2">Backend Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Mohamed ali K_L.pdf')"> Download CV</button>
+                <button class="btn btn-color-2"  onclick="window.open('./assets/Mohamed_Resume.pdf')"> Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'"> contact_info</button>
             </div>
             <div id="socials-container">
@@ -58,7 +60,7 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/mohamed bw.png" alt="profile-picture"
+                <img src="./assets/About_Photo.png" alt="profile-picture"
                 class="about-pic">
             </div>
             <div class="about-details-container">
@@ -67,7 +69,7 @@
                         <img src="./assets/experience.png" alt="experience icon"
                         class="icon">
                         <h3>Experience</h3>
-                        <p>Fresher <br />Software Developer</p>
+                        <p>3 Years <br />Software Developer</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="educaztion icon"
@@ -86,98 +88,125 @@
         <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" 
         onclick="location.href='./#experience'">
     </section>
+    </section>
     <section id="experience">
+        <p class="section__text__p1">My Professional Journey</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-entry details-container">
+            <div class="experience-entry__company">
+                <img class="experience-entry__logo" src="https://www.techmahindra.com/themes/custom/techm/images/techm-logo.svg" alt="Tech Mahindra logo">
+                <div class="experience-entry__role">
+                    <h2 class="experience-sub-title">Software Developer</h2>
+                    <p class="experience-entry__company-name">TECH MAHINDRA</p>
+                </div>
+                <p class="experience-entry__dates">2024 - 2027</p>
+            </div>
+            <ul class="experience-entry__responsibilities">
+                <li>Developed and maintained backend components for a broadband service platform, supporting customer and broadband service operations.</li>
+                <li>Developed and enhanced REST APIs for application requests, business logic, validations, and communication between backend components.</li>
+                <li>Implemented business logic using Java and Spring Boot, following application architecture and coding standards.</li>
+                <li>Worked with Spring Data JPA, Hibernate, and MySQL for entity mapping, repository operations, persistence, and database interactions.</li>
+                <li>Analysed business requirements and implemented backend changes to support new features and enhancements within the broadband domain.</li>
+                <li>Integrated backend services through REST-based communication, handling request and response flows between dependent application components.</li>
+                <li>Investigated and resolved application issues by tracing problems across Java service logic, REST APIs, and database operations.</li>
+                <li>Implemented exception handling and input validation to improve API reliability and provide consistent responses.</li>
+                <li>Used Git for source-code management and followed Agile development practices for feature implementation and defect resolution.</li>
+                <li>Collaborated with developers, QA, business analysts, and stakeholders during sprint planning, requirement discussions, development, testing, and release activities.</li>
+                <li>Used Postman to validate REST API behaviour and verify backend changes across different scenarios.</li>
+                <li>Maintained technical documentation in Confluence covering API behaviour, implementation details, and application changes.</li>
+            </ul>
+            <div class="experience-entry__tools">
+                <h3>Tools &amp; Technologies</h3>
+                <ul class="experience-entry__tool-list">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Spring Data JPA</li>
+                    <li>Hibernate</li>
+                    <li>MySQL</li>
+                    <li>REST APIs</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>CI/CD</li>
+                    <li>Docker</li>
+                    <li>Postman</li>
+                    <li>Jira</li>
+                    <li>Confluence</li>
+                    <li>Agile</li>
+                </ul>
+            </div>
+            <p class="experience-entry__award"><strong>Recognition</strong> Best Employee Award for strong performance and contribution to team productivity.</p>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Skills</h1>
         <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>intermediate</p>
-                            </div>
+            <div class="about-containers skills-grid">
+                <div class="details-container skill-card">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="skill-list">
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Java</h3><p class="skill-level">Advanced</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>intermediate</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Spring Boot</h3><p class="skill-level">Advanced</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>JAVASCRIPT</h3>
-                                <p>Basic</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Spring Data JPA</h3><p class="skill-level">Advanced</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>BOOTSTRAP</h3>
-                                <p>Basic</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Hibernate</h3><p class="skill-level">Intermediate</p></div>
+                        </article>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>SQL / MySQL</h3><p class="skill-level">Advanced</p></div>
+                        </article>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>REST APIs</h3><p class="skill-level">Advanced</p></div>
                         </article>
                     </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>JAVA</h3>
-                                <p>intermediate</p>
-                            </div>
+                <div class="details-container skill-card">
+                    <h2 class="experience-sub-title">Tools &amp; Practices</h2>
+                    <div class="skill-list">
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Git</h3><p class="skill-level">Advanced</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>SPRINGBOOT</h3>
-                                <p>intermediate</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>GitHub</h3><p class="skill-level">Intermediate</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>GIT</h3>
-                                <p>Intermediate</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>CI/CD</h3><p class="skill-level">Beginner</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>GITHUB</h3>
-                                <p>Intermediate</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Docker</h3><p class="skill-level">Intermediate</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>PYTHON</h3>
-                                <p>Basic</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Postman</h3><p class="skill-level">Advanced</p></div>
                         </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="checkmark icon" 
-                            class="icon">
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Jira</h3><p class="skill-level">Advanced</p></div>
+                        </article>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Confluence</h3><p class="skill-level">Advanced</p></div>
+                        </article>
+                        <article class="skill-item">
+                            <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                            <div><h3>Agile</h3><p class="skill-level">Beginner</p></div>
                         </article>
                     </div>
                 </div>
@@ -193,20 +222,20 @@
             <div class="about-containers">
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/vote.png" alt="project1" class="project-img">
+                    <img src="./assets/Ecommerce Microservices Cloud Logo.png" alt="project1" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Evote</h2>
+                <h2 class="experience-sub-title project-title">Ecommerce Microservices</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohamedali3521/evote'">GitHub</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohamedali3521/ecommerce-microservices-springboot'">GitHub</button>
                 </div>
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
-                    <img src="./assets/crud.png" alt="project2" class="project-img">
+                    <img src="./assets/AI Code Review Robot Emblem.png" alt="project2" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">CRUD</h2>
+                <h2 class="experience-sub-title project-title">Java Code Review Agent</h2>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohamedali3521/CRUD-Application/tree/master'">GitHub</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mohamedali3521/Java_Code_Review_Agent'">GitHub</button>
                 </div>
             </div>
         </div>
@@ -236,6 +265,7 @@
                 <ul class="nav-links">
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#project">PROJECT</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
